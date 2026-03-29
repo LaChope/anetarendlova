@@ -2,9 +2,20 @@
     --color-primary: #000000;
     --color-background: #ffffff;
     --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --padding-lateral: 6vw;
+
+    /* Mobile defaults */
+    --padding-lateral: 10vw;
     --gap-grid: 2rem;
-    --margin-header: 4rem;
+    --margin-header: 3rem;
+}
+
+@media (min-width: 768px) {
+    :root {
+        /* Desktop overrides */
+        --padding-lateral: 15vw;
+        --gap-grid: 5rem;
+        --margin-header: 8rem;
+    }
 }
 
 body {

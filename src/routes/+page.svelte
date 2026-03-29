@@ -12,7 +12,14 @@
 <style>
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 1fr;
 		gap: var(--gap-grid);
+	}
+
+	/* Desktop layout */
+	@media (min-width: 768px) {
+		.grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 </style>
