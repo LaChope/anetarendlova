@@ -11,11 +11,14 @@ export const PORTFOLIO_PROJECTS = [
 		id: 1,
 		slug: '242-bk-ii',
 		title: '242_BK II',
-		imageUrl: '/images/project-1.webp',
+		imageUrl: '/images/SKY/DSC01072-HDR-2.jpg',
 		images: [
-			'/images/project-1.webp',
-			'/images/project-1.webp',
-			'/images/project-1.webp'
+			'static/images/SKY/DSC00919-HDR-2.jpg',
+			'static/images/SKY/DSC01015-HDR-2.jpg',
+			'static/images/SKY/DSC01111-HDR-2.jpg',
+			'static/images/SKY/DSC01210-HDR-2.jpg',
+			'static/images/SKY/DSC01219-HDR-2.jpg',
+			'static/images/SKY/DSC01255-HDR-2.jpg'
 		],
 		details: [
 			{ label: 'Program', value: 'Office' },
@@ -33,11 +36,7 @@ export const PORTFOLIO_PROJECTS = [
 		slug: '242-bk-ii',
 		title: '242_BK II',
 		imageUrl: '/images/project-2.webp',
-		images: [
-			'/images/project-2.webp',
-			'/images/project-2.webp',
-			'/images/project-2.webp'
-		],
+		images: ['/images/project-2.webp', '/images/project-2.webp', '/images/project-2.webp'],
 		details: [
 			{ label: 'Program', value: 'Office' },
 			{ label: 'Stage', value: 'Built' },
@@ -54,11 +53,7 @@ export const PORTFOLIO_PROJECTS = [
 		slug: '242-bk-ii',
 		title: '242_BK II',
 		imageUrl: '/images/project-3.webp',
-		images: [
-			'/images/project-3.webp',
-			'/images/project-3.webp',
-			'/images/project-3.webp'
-		],
+		images: ['/images/project-3.webp', '/images/project-3.webp', '/images/project-3.webp'],
 		details: [
 			{ label: 'Program', value: 'Office' },
 			{ label: 'Stage', value: 'Built' },
