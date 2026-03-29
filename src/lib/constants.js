@@ -13,12 +13,12 @@ export const PORTFOLIO_PROJECTS = [
 		title: '242_BK II',
 		imageUrl: '/images/SKY/DSC01072-HDR-2.jpg',
 		images: [
-			'static/images/SKY/DSC00919-HDR-2.jpg',
-			'static/images/SKY/DSC01015-HDR-2.jpg',
-			'static/images/SKY/DSC01111-HDR-2.jpg',
-			'static/images/SKY/DSC01210-HDR-2.jpg',
-			'static/images/SKY/DSC01219-HDR-2.jpg',
-			'static/images/SKY/DSC01255-HDR-2.jpg'
+			'/images/SKY/DSC00919-HDR-2.jpg',
+			'/images/SKY/DSC01015-HDR-2.jpg',
+			'/images/SKY/DSC01111-HDR-2.jpg',
+			'/images/SKY/DSC01210-HDR-2.jpg',
+			'/images/SKY/DSC01219-HDR-2.jpg',
+			'/images/SKY/DSC01255-HDR-2.jpg'
 		],
 		details: [
 			{ label: 'Program', value: 'Office' },
