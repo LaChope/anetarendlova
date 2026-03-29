@@ -6,15 +6,68 @@ export const NAVIGATION_LINKS = [
 	{ href: '/studio', label: 'studio' }
 ];
 
-// src/lib/constants.js
 export const PORTFOLIO_PROJECTS = [
-	{ id: 1, title: '242_BK II - PULSE AWARD NOMINEE', imageUrl: '/images/project-1.webp' },
-	{ id: 2, title: '217_G21-2', imageUrl: '/images/project-2.webp' },
-	{ id: 3, title: '198_G-21', imageUrl: '/images/project-3.webp' },
-	{ id: 4, title: '198_G-21', imageUrl: '/images/project-3.webp' },
-	{ id: 5, title: '198_G-21', imageUrl: '/images/project-3.webp' },
-	{ id: 6, title: '198_G-21', imageUrl: '/images/project-3.webp' },
-	{ id: 7, title: '198_G-21', imageUrl: '/images/project-3.webp' },
-	{ id: 8, title: '198_G-21', imageUrl: '/images/project-3.webp' },
-	{ id: 9, title: '198_G-21', imageUrl: '/images/project-3.webp' }
+	{
+		id: 1,
+		slug: '242-bk-ii',
+		title: '242_BK II',
+		imageUrl: '/images/project-1.webp',
+		images: [
+			'/images/project-1.webp',
+			'/images/project-1.webp',
+			'/images/project-1.webp'
+		],
+		details: [
+			{ label: 'Program', value: 'Office' },
+			{ label: 'Stage', value: 'Built' },
+			{ label: 'Location', value: 'Bratislava' },
+			{ label: 'Usable area', value: '250 m2' },
+			{ label: 'Year', value: '2022' },
+			{ label: 'Team', value: 'Peter Kuklica, Martin Smerek, Erik Horňáček' },
+			{ label: 'Photograph', value: 'Matej Hakár' }
+		],
+		text: 'We insert a plateau and a box of closed offices into the vertical space. We take advantage of the height of the space as well as its technical character. All elements are purely functional and expressively left in their basic state. The plateau area complements the office programme with a rest area.'
+	},
+	{
+		id: 2,
+		slug: '242-bk-ii',
+		title: '242_BK II',
+		imageUrl: '/images/project-2.webp',
+		images: [
+			'/images/project-2.webp',
+			'/images/project-2.webp',
+			'/images/project-2.webp'
+		],
+		details: [
+			{ label: 'Program', value: 'Office' },
+			{ label: 'Stage', value: 'Built' },
+			{ label: 'Location', value: 'Bratislava' },
+			{ label: 'Usable area', value: '250 m2' },
+			{ label: 'Year', value: '2022' },
+			{ label: 'Team', value: 'Peter Kuklica, Martin Smerek, Erik Horňáček' },
+			{ label: 'Photograph', value: 'Matej Hakár' }
+		],
+		text: 'We insert a plateau and a box of closed offices into the vertical space. We take advantage of the height of the space as well as its technical character. All elements are purely functional and expressively left in their basic state. The plateau area complements the office programme with a rest area.'
+	},
+	{
+		id: 3,
+		slug: '242-bk-ii',
+		title: '242_BK II',
+		imageUrl: '/images/project-3.webp',
+		images: [
+			'/images/project-3.webp',
+			'/images/project-3.webp',
+			'/images/project-3.webp'
+		],
+		details: [
+			{ label: 'Program', value: 'Office' },
+			{ label: 'Stage', value: 'Built' },
+			{ label: 'Location', value: 'Bratislava' },
+			{ label: 'Usable area', value: '250 m2' },
+			{ label: 'Year', value: '2022' },
+			{ label: 'Team', value: 'Peter Kuklica, Martin Smerek, Erik Horňáček' },
+			{ label: 'Photograph', value: 'Matej Hakár' }
+		],
+		text: 'We insert a plateau and a box of closed offices into the vertical space. We take advantage of the height of the space as well as its technical character. All elements are purely functional and expressively left in their basic state. The plateau area complements the office programme with a rest area.'
+	}
 ];

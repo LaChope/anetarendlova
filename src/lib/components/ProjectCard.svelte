@@ -2,14 +2,22 @@
 	let { project } = $props();
 </script>
 
-<article class="card">
-	<div class="container">
-		<img src={project.imageUrl} alt={project.title} class="image" />
-	</div>
-	<p class="caption">{project.title}</p>
-</article>
+<a href={`/project/${project.slug}`} class="card-link">
+	<article class="card">
+		<div class="container">
+			<img src={project.imageUrl} alt={project.title} class="image" />
+		</div>
+		<p class="caption">{project.title}</p>
+	</article>
+</a>
 
 <style>
+	.card-link {
+		text-decoration: none;
+		color: inherit;
+		display: block;
+	}
+
 	.card {
 		display: flex;
 		flex-direction: column;
