@@ -25,7 +25,7 @@
 		<nav class="navigation" class:is-open={isMenuOpen}>
 			<div class="links">
 				{#each NAVIGATION_LINKS as link}
-					<a href={link.href} onclick={() => isMenuOpen = false}>{link.label}</a>
+					<a href={link.href} onclick={() => (isMenuOpen = false)}>{link.label}</a>
 				{/each}
 			</div>
 		</nav>
@@ -33,10 +33,7 @@
 
 	<main class="content">
 		{#key page.url.pathname}
-			<div
-				in:fly={{ y: 15, duration: 400, delay: 200 }}
-				out:fade={{ duration: 200 }}
-			>
+			<div in:fly={{ y: 15, duration: 400, delay: 200 }} out:fade={{ duration: 200 }}>
 				{@render children()}
 			</div>
 		{/key}
@@ -112,13 +109,14 @@
 	/* Desktop adjustments */
 	@media (min-width: 768px) {
 		.hamburger {
-			display: none; /* Hide button on large screens */
+			display: none;
 		}
 
 		.navigation {
-			display: block; /* Always show links */
+			display: block;
 			position: static;
 			padding-top: 0;
+			width: auto; /* Resets width to allow space-between alignment */
 		}
 
 		.links {

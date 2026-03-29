@@ -28,10 +28,9 @@
 
 <style>
 	.project-layout {
-		display: grid;
-		grid-template-columns: 65% 1fr;
-		gap: 4rem;
-		align-items: start;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
 	}
 
 	.image-column {
@@ -47,10 +46,9 @@
 	}
 
 	.info-column {
-		position: sticky;
-		top: 2rem;
 		font-size: 0.85rem;
 		line-height: 1.5;
+		order: -1; /* Shifts the text above the images */
 	}
 
 	.title {
@@ -80,5 +78,25 @@
 
 	.description {
 		margin: 0;
+	}
+
+	/* Desktop layout */
+	@media (min-width: 768px) {
+		.project-layout {
+			display: grid;
+			grid-template-columns: 65% 1fr;
+			gap: 4rem;
+			align-items: start;
+		}
+
+		.info-column {
+			order: 0; /* Restores the default sequence */
+			position: sticky;
+			top: 2rem;
+		}
+
+		.project-image {
+			width: 60%;
+		}
 	}
 </style>
