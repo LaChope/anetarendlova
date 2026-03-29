@@ -30,9 +30,10 @@
 	}
 
 	.caption {
-		font-size: 0.75rem;
-		color: gray;
+		font-size: 0.65rem;
+		color: #999999;
 		text-transform: uppercase;
+		letter-spacing: 0.05em;
 		margin: 0;
 	}
 </style>

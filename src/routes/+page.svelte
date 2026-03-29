@@ -13,7 +13,6 @@
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: var(--spacing-unit, 2rem);
-		padding: var(--spacing-unit, 2rem);
+		gap: var(--gap-grid);
 	}
 </style>

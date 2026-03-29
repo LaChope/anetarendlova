@@ -1,16 +1,17 @@
-/* src/app.css */
 :root {
-    --primary-color: #000000;
-    --background-color: #ffffff;
+    --color-primary: #000000;
+    --color-background: #ffffff;
     --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --spacing-unit: 2rem;
+    --padding-lateral: 6vw;
+    --gap-grid: 2rem;
+    --margin-header: 4rem;
 }
 
 body {
     margin: 0;
     padding: 0;
-    color: var(--primary-color);
-    background-color: var(--background-color);
+    color: var(--color-primary);
+    background-color: var(--color-background);
     font-family: var(--font-family);
     -webkit-font-smoothing: antialiased;
 }
