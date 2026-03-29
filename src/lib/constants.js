@@ -1,4 +1,4 @@
-import { filterAssetsByFolder } from './utils.js';
+import { getSortedProjectImages } from './utils.js';
 
 export const SITE_TITLE = 'anetarendlova';
 
@@ -8,22 +8,27 @@ export const NAVIGATION_LINKS = [
 	{ href: '/studio', label: 'studio' }
 ];
 
-const allImages = import.meta.glob('$lib/assets/projects/**/*.{jpg,png,JPG,PNG}', {
+const allImages = import.meta.glob('$lib/assets/projects/**/*.{jpg,png}', {
 	query: { format: 'webp' },
 	import: 'default',
 	eager: true
 });
 
 const PROJECTS_DATA = [
-	{ id: 1, slug: 'SKY', title: 'SKY', program: 'Office' },
-	{ id: 2, slug: 'CIS', title: 'CIS', program: 'School' },
-	{ id: 3, slug: 'KNP', title: 'KNP', program: 'Library' },
-	{ id: 4, slug: 'SSP', title: 'SSP', program: 'Exhibition' }
+	{ id: 1, slug: 'SKY', title: 'SKY', firstImage: 'DSC01072-HDR-2', program: 'Office' },
+	{ id: 2, slug: 'CIS', title: 'CIS', firstImage: 'CIS-STU-INT-jidelna-01', program: 'School' },
+	{ id: 3, slug: 'KNP', title: 'KNP', firstImage: 'CAM_ENTRY', program: 'Library' },
+	{
+		id: 4,
+		slug: 'SSP',
+		title: 'SSP',
+		firstImage: 'SSP_STU_INT_vystava-00',
+		program: 'Exhibition'
+	}
 ];
 
 export const PORTFOLIO_PROJECTS = PROJECTS_DATA.map((project) => {
-	const images = filterAssetsByFolder(allImages, project.slug);
-
+	const images = getSortedProjectImages(allImages, project.slug, project.firstImage);
 	return {
 		...project,
 		imageUrl: images[0] || '',
