@@ -1,0 +1,21 @@
+/* src/app.css */
+:root {
+    --primary-color: #000000;
+    --background-color: #ffffff;
+    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --spacing-unit: 2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
