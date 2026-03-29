@@ -6,21 +6,21 @@ export const NAVIGATION_LINKS = [
 	{ href: '/studio', label: 'studio' }
 ];
 
+const skyGlob = import.meta.glob('$lib/assets/SKY/*.{jpg,png}', {
+	query: { format: 'webp' },
+	import: 'default',
+	eager: true
+});
+
+const skyImages = Object.values(skyGlob);
+
 export const PORTFOLIO_PROJECTS = [
 	{
 		id: 1,
 		slug: 'SKY',
 		title: 'SKY',
-		imageUrl: '/images/SKY/DSC01072-HDR-2.jpg',
-		images: [
-			'/images/SKY/DSC01072-HDR-2.jpg',
-			'/images/SKY/DSC00919-HDR-2.jpg',
-			'/images/SKY/DSC01015-HDR-2.jpg',
-			'/images/SKY/DSC01111-HDR-2.jpg',
-			'/images/SKY/DSC01210-HDR-2.jpg',
-			'/images/SKY/DSC01219-HDR-2.jpg',
-			'/images/SKY/DSC01255-HDR-2.jpg'
-		],
+		imageUrl: skyImages.length > 0 && skyImages[0],
+		images: Object.values(skyImages),
 		details: [
 			{ label: 'Program', value: 'Office' },
 			{ label: 'Stage', value: 'Built' },
